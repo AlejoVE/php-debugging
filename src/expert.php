@@ -71,7 +71,7 @@ echo("<br>");
 $arr = [];
 
 
-function combineNames($str1 = "", $str2 = "") {
+function combineNames($str1 = "", $str2 = "")  {
     $params = [$str1, $str2];
     foreach($params as &$param) {
         if ($param == "") {
@@ -180,7 +180,7 @@ $arrayFiltered = array_filter($areTheseFruits, function ($value){
     global $validFruits;
  if(in_array($value,  $validFruits)){
      return $value;
- };
+ }
 });
 
 var_dump($areTheseFruits);//do not change this
