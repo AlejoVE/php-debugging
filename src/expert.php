@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 // === Exercise 1 ===
 function new_exercise() {
-
     $x = 1;
     $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>";
     echo $block;
@@ -27,9 +26,10 @@ echo("<hr>");
 // === Exercise 3 ===
 // This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
 echo("Exercise 3:");
+echo("<br>");
 
-$str = '<br>"Debugged !" Also very fun';
-echo substr($str, 0, 16);
+$str ='Debugged ! Also very fun';
+echo substr($str, 0, 10);
 echo("<br>");
 echo("<hr>");
 
